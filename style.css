@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+.box{
+    height: 200px;
+    width: 1600px;
+    background-color: rgb(10, 29, 44);
+    
+    
+}
+#space{
+    text-align: center;
+    height: 70px;
+}
+#keshav{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    #spacee{
+        text-align: center;
+        height: 10px;
+    }
+
+#web{
+     font-size: 15px;
+    font: weight 30px; ;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.boxx{
+    
+    height: 170px;
+    width: 1300px;
+    background-color:whitesmoke;
+    margin-left: 120px;
+    margin-top: 20px;
+      
+    
+}
+#sap{
+    text-align: center;
+    color: white;
+    height: 65px;
+}
+#h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+#sapp{
+    text-align: center;
+    color: white;
+    height: 15px;
+}
+#st{
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.box1{
+    height: 200px;
+    width: 1300px;
+    background-color: rgb(196, 220, 247);
+    margin-top: 20px;
+    margin-left: 120px;
+}
+#p{
+    text-align: center;
+    height: 60px;
+}
+#h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    
+}
+.box2{
+    text-align: center;
+    height: 40px;
+    width: 800px;
+    background-color: white;
+    margin-left: 270px;
+}
+#box4{
+    text-align: center;
+    height: 3px;
+}
+#box3{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.box7{
+    text-align: center;
+    height: 40px;
+    width: 800px;
+    background-color: white;
+    margin-left: 270px; 
+    margin-top: 5px;
+}
+#box5{
+    text-align: center;
+    height:3px ;
+}
+#box6{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box8{
+    text-align: center;
+    height: 275px;
+    width: 1300px;
+    margin-top: 20px;
+    margin-left: 120px;
+    background-color: lightgoldenrodyellow;
+}
+#box9{
+    text-align: center;
+    height: 60px;
+    background-color:lightgoldenrodyellow;
+}
+.box16{
+    text-align: center;
+    height: 30px;
+    width: 800px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 270px;
+}
+#box10{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#box11{
+    text-align: center;
+    height: 5px;
+}
+#box12{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
+    margin-top: 1px;
+}
+#box13{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-top: 1px;
+    
+}
+#box14{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-top: 0px;
+}
+#box15{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-top: 0px;
+}
+.k1{
+    text-align: center;
+    height: 250px;
+    width: 1300px;
+    margin-top: 20px;
+    margin-left: 120px;
+    background-color:plum;
+}
+#k2{
+    text-align: center;
+    height: 50px;
+
+}
+#k3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+#k4{
+    text-align: center;
+    height: 7px;
+}
+.k5{
+    text-align: center;
+    height: 30px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 270px;
+    background-color: white;
+}
+#k6{
+    text-align: center;
+    height: 5px;
+
+}
+.k8{
+    text-align: center;
+    height: 30px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 270px;
+    background-color: white;
+}
+#k7{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.A1{
+    text-align: center;
+    height: 250px;
+    width: 1300px;
+    margin-top: 20px;
+    margin-left: 120px;
+    background-color:linen ;
+}
+#a2{
+    height: 70px;
+    width: 1600px;
+    margin-top: 20px;
+    background-color: black;
+}
+#a3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#a4{
+    height: 25px;
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family:hi;
+    src: url(./Blackdeath\ -\ Demo.otf);
+}
+
+@font-face {
+    font-family: ni;
+    src: url(./Dark\ Zombie\ TTF\ Demo.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/3079057.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 650px;
+    text-align: center ;
+
+}
+h1{ 
+    font-size: 50px;
+    font-weight:1000;
+    font-family: hi;
+
+    
+}
+button{
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-family: ni;
+    
+}

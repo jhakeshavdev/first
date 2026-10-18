@@ -14,8 +14,32 @@ body{
     align-items: center;
 }
 
-p{
-    color: rgb(180, 221, 118);
-    font-family: monospace;
-    font-size: 4rem;
+@property --bgcolor{
+    syntax: "<color>" ;
+    initial-value:rgb(186, 197, 38) ;
+    inherits: false;
+}
+
+@keyframes AnimateBgcolor {
+    from{
+        --bgcolor: rgb(149, 97, 97);
+        border-radius: 0px;
+        scale: 1;
+        box-shadow: 0px 0px 0px none;
+    }
+    to{
+
+       --bgcolor: rgb(72, 72, 143);
+       border-radius: 50px;
+       scale: 0.5;
+        box-shadow: 5px 5px 50px white;
+    }
+    
+}
+
+.box{
+    width: 200px;
+    height: 400px;
+    background-color: var(--bgcolor);
+    animation: AnimateBgcolor 2s infinite alternate;
 }

@@ -6,64 +6,48 @@
 html,body{
     width: 100%;
     height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
 }
 body{
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@property --rotate{
-    syntax:"<angle>" ;
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes borderAnimate {
-    from{
-        --rotate:0deg;
-    }
-    to{
-        --rotate:360deg;
-    }
+    gap: 30px;
+    anchor-name: --some-anchor;
 }
 
 .box{
-    max-width: 300px;
-    padding-inline: 10px;
-    padding-bottom:10px ;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius:15px;
-    overflow: hidden;
-    background:
-        linear-gradient(black) padding-box,
-        conic-gradient(from var(--rotate), black, rgb(237, 21, 111),black) border-box;
-    border: 0px solid rgba(223, 21, 21, 0);
-    animation: borderAnimate 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-play-state: paused;
-    transition: all linear 0.25s;
-    box-shadow: 0 0 0px rgb(251, 9, 166);
-    color: white;
-    text-shadow: 0 0 0px rgb(251, 9, 166);
-
+    width: 200px;
+    height: 200px;
 }
 
 .box:hover{
-    animation-play-state: running;
-    border-width: 5px;
-    box-shadow: 0 0 40px rgb(251, 9, 166);
-    text-shadow: 0 0 10px rgb(251, 9, 166);
-    color: rgb(251, 9, 166);
+    anchor-name: --some-anchor;
 }
-.box img{
-   width: 100%; 
-   object-fit: cover;
+.red{
+    
+    background-color: rgba(255, 0, 0, 0.59);
+}
 
+.blue{
+    background-color: rgb(29, 29, 118);
+}
+
+.green{
+    background-color: rgb(23, 106, 23);
+}
+
+.anchor{
+    background-color: white;
+    border-radius: 10px; 
+    /* bottom three (position,position-anchor,pointer-events) are must be written in every anchor tag */
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    pointer-events: none;
+    position-anchor: --some-anchor;
+    transition: all 0.3s linear;
+    mix-blend-mode: difference;  /* ye kya karta hai ki iske piche jo color aa rha hota hai uske just opposite colour deta hai */
 }

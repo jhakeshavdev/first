@@ -1,27 +1,19 @@
-var btn=document.querySelector('button')
-var main=document.querySelector('main')
-var h2=document.querySelector('h2')
-var inner=document.querySelector('.inner')
-var grow=0
-var num=50+Math.floor(Math.random()*50)
+const p=document.querySelector("p");
+const text=p.innerText
 
+const character="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-btn.addEventListener('click',function(){
-   var int =setInterval(() => {
-    grow++
-    h2.innerHTML=grow +'%'
-     inner.style.width= grow+'%'
-     btn.style.pointerEvents='none'
-    }, num)
+let iteration = 0
+ 
+function randomtext(){
+    const str=text.split("").map((char,index)=>{
+        if(index<iteration){
+            return char
+        }
+        return character.split("")[Math.floor(Math.random()*52)]
+    }).join("")
+    p.innerText=str
+    iteration+=0.2
+}
 
-   setTimeout(function(){
- clearInterval(int)
-btn.innerHTML='Downloaded'
-btn.style.opacity=0.5
-
-console.log('your file is dowloaded in',num/10, 'sec');
-
-},num*100)
-
-
-})
+setInterval(randomtext,30);

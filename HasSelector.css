@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    transition: all linear 0.3s;
+}
+
+.red{
+    
+    background-color: rgba(255, 0, 0, 0.59);
+}
+
+.blue{
+    background-color: rgb(29, 29, 118);
+}
+
+.green{
+    background-color: rgb(23, 106, 23);
+}
+
+body:has(.box:hover) .box{
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+.box:hover{
+    transform: scale(1.2) !important;
+    opacity: 1 !important;
+}

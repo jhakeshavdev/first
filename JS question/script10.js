@@ -39,3 +39,15 @@ profilelekaraao("keshav",function(profiledata){
     });
     });
 });
+
+
+
+
+// Callback :- A function that is passed as an argument to another function and is executed at a later time.
+                // ek function jo turant nahi chalega , ye chalega jab aapka koi kaam complete hoga.
+
+                // getDataFromInstagram("keshav",function(){
+                
+
+               //    })     => yaha par jo function hai ye callback function hai jo ki getDataFromInstagram ke andar pass kiya gaya hai 
+               //               aur ye "keshav" ke liye data fetch karne ke baad chalega.

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+
+}
+
+h2{
+padding: 40px 80px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 100px;
+background-color: beige;
+}
+button{
+    padding: 10px 20px;
+    background-color: rgb(105, 105, 166);
+    border-radius: 5PX;
+    border: none;
+    color: rgb(224, 222, 214);
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+button:active{
+   scale: 0.95;
+}

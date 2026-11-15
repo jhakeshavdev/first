@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        small{
+            color: red;
+            font-size: 12px;
+        }
+        form{
+            padding: 10px;
+
+
+            input,select,textarea{
+                margin-top: 7px;
+            }
+
+        }
+        #hide{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <input id="name" type="text" placeholder="name">
+        <div id="hide">
+        <br>
+        <small>Your name should be greater than two characters</small>
+        </div>
+        <br>
+        <input type="email" placeholder="email">
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <select >
+            <option value="choose gender"disabled selected >choose gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+        <br>
+        <textarea placeholder="Tell about yourself"></textarea><br>
+        <input type="submit">
+    </form>
+    <script src="formvalidation.js"></script>
+</body>
+</html>

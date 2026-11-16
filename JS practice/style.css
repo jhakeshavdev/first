@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    anchor-name: --some-anchor;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.box:hover{
+    anchor-name: --some-anchor;
+}
+.red{
+    
+    background-color: rgba(255, 0, 0, 0.59);
+}
+
+.blue{
+    background-color: rgb(29, 29, 118);
+}
+
+.green{
+    background-color: rgb(23, 106, 23);
+}
+
+.anchor{
+    background-color: white;
+    border-radius: 10px; 
+    /* bottom three (position,position-anchor,pointer-events) are must be written in every anchor tag */
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    pointer-events: none;
+    position-anchor: --some-anchor;
+    transition: all 0.3s linear;
+    mix-blend-mode: difference;  /* ye kya karta hai ki iske piche jo color aa rha hota hai uske just opposite colour deta hai */
+}

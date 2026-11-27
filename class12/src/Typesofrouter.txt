@@ -1,0 +1,32 @@
+React -> single page application(SPA) banata hai ,matlab URL change hone pe kuchh nahi hota tha
+
+React-Router-DOM aaya tab aur ye URL change hone par kaam karta hai 
+
+Types of Routers 
+
+- BrowserRouter
+        pros:-
+                1.It uses History api
+                2.URL clean hoti hai
+                3. modern apps me lagbahg yhai use hota hai 
+                4. Needs server config.
+
+        cons:-
+                1.jab bhi hum backend se data layenge to hamesha ye sirf index.html file hi accept krta hai aur kisi naam ka html file nahi
+
+- HasRouter
+            URL contains hash (#) - /courses/#/about
+            - older browser me use hota tha
+            - URL ugly lagti hai  dekhne ke liye
+            - no SEO
+
+- Memory Router
+            - React native me jab hum application banate hai tab use hota hai
+            - Internal state Management and Nvigation wagera me use aata hai 
+            
+- Static Router 
+            - SSR (Server site rendering ) jab karenge tab use aata hai 
+
+---------------------------------------------------------------------------
+
+jayada tar time hum BrowserRouter hi use karte hai
